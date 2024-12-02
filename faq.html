@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <ul class="nav-itens">
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./funcionalidades.html">Funcionalidades</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="faq-container">
+        <h1>FAQ</h1>
+
+        <div class="faq-item">
+            <button class="faq-question">O que é Inteligência Artificial?</button>
+            <div class="faq-answer">
+                <p>A Inteligência Artificial (IA) é o campo da computação que desenvolve sistemas capazes de realizar tarefas que normalmente requerem inteligência humana, como reconhecimento de voz, tomada de decisão e aprendizado.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Quais são os tipos de IA?</button>
+            <div class="faq-answer">
+                <p>Existem três tipos principais de IA: IA estreita (ou fraca), IA geral (ou forte) e IA superinteligente. A IA estreita é especializada em tarefas específicas, enquanto a IA geral tem capacidade de realizar qualquer tarefa cognitiva humana.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Qual a diferença entre aprendizado supervisionado e não supervisionado?</button>
+            <div class="faq-answer">
+                <p>O aprendizado supervisionado utiliza dados rotulados para treinar modelos, enquanto o aprendizado não supervisionado busca padrões em dados não rotulados.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">O que é o aprendizado de máquina?</button>
+            <div class="faq-answer">
+                <p>O aprendizado de máquina (ML) é uma subárea da IA que utiliza algoritmos para analisar dados e aprender a partir deles, permitindo que os sistemas façam previsões ou tomem decisões sem serem explicitamente programados.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Como a IA é usada em assistentes virtuais?</button>
+            <div class="faq-answer">
+                <p>Os assistentes virtuais, como Siri, Alexa e Google Assistant, utilizam IA para entender comandos de voz, processar informações e responder de maneira natural ao usuário.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">O que são redes neurais artificiais?</button>
+            <div class="faq-answer">
+                <p>Redes neurais artificiais são sistemas computacionais inspirados no funcionamento do cérebro humano, compostos por unidades chamadas neurônios que processam informações em camadas.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">O que é a IA explicativa?</button>
+            <div class="faq-answer">
+                <p>A IA explicativa é uma abordagem que visa tornar os modelos de IA mais transparentes e compreensíveis, permitindo que os humanos entendam como as decisões são tomadas pelas máquinas.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">IA pode substituir empregos humanos?</button>
+            <div class="faq-answer">
+                <p>A IA pode automatizar muitas tarefas repetitivas e tarefas que envolvem análise de dados, mas a maioria dos especialistas acredita que ela deve complementar os seres humanos, não substituí-los completamente.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Quais são as aplicações de IA no setor da saúde?</button>
+            <div class="faq-answer">
+                <p>A IA é utilizada na análise de imagens médicas, diagnóstico de doenças, personalização de tratamentos e na gestão de dados de pacientes, melhorando a eficiência e a precisão dos cuidados.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">O que é um chatbot?</button>
+            <div class="faq-answer">
+                <p>Um chatbot é um software de IA que simula conversas humanas e pode interagir com usuários por texto ou voz, sendo usado em serviços de atendimento ao cliente e assistentes virtuais.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+
+            
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                } else {
+                    answer.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
